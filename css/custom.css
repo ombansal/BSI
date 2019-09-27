@@ -503,7 +503,10 @@ position:absolute;
 }
 */
 
-.container1{
+ .container1{
+	 visibility: hidden;
+ 
+  transition: visibility 0s, opacity 0.5s linear;
 	top: 0;
 	right: 0;
     width:350px;
@@ -512,6 +515,7 @@ position:absolute;
 	bottom:180px;
 	left:80px;
 }
+
 @media (max-width: 768px) {
 	.container1{
 	top: 0;
@@ -843,4 +847,15 @@ position:absolute;
 
 @media (max-width:425px){
 .container1{display:none;}
+}
+
+
+
+.moretext {
+  display: none;
+  
+}
+.color-text-a{
+-webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+  transition: all 2s;
 }
