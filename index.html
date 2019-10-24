@@ -27,6 +27,10 @@
   <!-- =======================================================
   ======================================================= -->
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+<style>
+ .dropdown-reverse{left:auto!important; right:100%!important; z-index: 9999;}
+ .menu-left-right{left: 0; background-color:green; z-index: 9999; opacity: 9999; box-shadow: 5px 15px green;}
+</style>
   </head>
 <body>
    <div class="click-closed"></div>
@@ -169,7 +173,7 @@
      <option>Hin</option>
    </select>
 
-        <ul class="navbar-nav" style=" margin-left:5px;">
+        <ul class="navbar-nav" >
    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home" style="font-size:20px; color:green;"></i></a> 
   </li>
     <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -190,6 +194,9 @@
            <li class="nav-item"><a class="nav-link" href="#">Sikkim Himalya Regional Center, Gangtok</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Southren Regional Centre, Coimbatore</a></li>
              <li class="nav-item"><a class="nav-link" href="#">Western Regional Centre, Pune</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Acharya Jagadish Chandra Bose Indian Botanic Garden, Howrah</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Botanic Garden of Indian Republic, Noida</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">High Altitude Western Himalayan Regional, Solan</a></li>
       </ul>
     </li>
 
@@ -1104,6 +1111,34 @@ $('#_reset').on('click', function() {
 })
 </script>
 
+<script>
+  //Change position for drop down
+    $(function () {
+    $(".navbar-nav li").on('mouseenter mouseleave', function (e) {
+        if ($('.sub-menu', this).length) {
+            var elm = $('.sub-menu', this);
+            var off = elm.offset();
+            var l = off.left;
+            var w = elm.width();
+            var docW = $(window).width();
 
+            var isEntirelyVisible = (l + w <= docW);
+
+            if (!isEntirelyVisible) {
+                $(elm).addClass('dropdown-reverse');
+            } else {
+                $(elm).removeClass('dropdown-reverse');
+            }
+        }
+    });
+
+    if($(window).width() < 767)
+    {
+       $(document).ready(function() { 
+            $(".sub-menu ul:last-child").addClass('menu-left-right');
+        }); 
+    }
+});
+</script>
 </body>
 </html>
