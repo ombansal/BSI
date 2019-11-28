@@ -128,9 +128,9 @@
     <div class="row">
     	<div><a href="#" class="skip">Skip To Main Content&nbsp;&nbsp;&nbsp;&nbsp;|</a></div>
         <div><a href="#">Screen Reader Access&nbsp;&nbsp;&nbsp;&nbsp;|</a></div>
-        <div><button id="_smallify">A-</button>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
-        <div><button id="_reset">A</button>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <div><button id="_biggify">A+</button></div>
+        <div><button id="_smallify" style="width:20px; height:20px; text-align:center; margin-top:2px;">A-</button>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+        <div><button id="_reset" style="width:20px; height:20px; text-align:center; margin-top:2px;">A</button>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div><button id="_biggify" style="width:20px; height:20px; text-align:center; margin-top:2px;">A+</button></div>
         <div><a  href="#"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;|</a></div>
          <div> 
       <a>
@@ -155,10 +155,10 @@
        <a class="navbar-brand text-brand" href="index.html">
   <img src="assets/images/logo.png" class="img-responsive" width="80" >
      <div id="display"> Botanical Survey of India
-      <p class="color-b" id="color-b1">Statutory Body of The Ministry of Environment, Forest and Climate Change<br>
+      <p class="color-b" id="color-b1">Ministry of Environment, Forest and Climate Change<br>
       <span class="color-a">Government of India
       </span></p>
-      <p class="color-b" id="color-b2">Statutory Body of The Ministry of Environment, <br>Forest and Climate Change<br>
+      <p class="color-b" id="color-b2">Ministry of Environment, <br>Forest and Climate Change<br>
       <span class="color-a">Government of India
       </span></p>
       </div></a>
@@ -179,6 +179,10 @@
     <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Regional Centres</a>
       <ul class="sub-menu">
+      
+      <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">BSI Regional Centres</a>
+          <ul class="sub-menu">
         <li class="nav-item"><a class="nav-link" href="rCenter.html">Andaman And Nicobar Regional Centre, PortBlair</a></li>
          <li class="nav-item"><a class="nav-link" href="#">Arid Zone Regional Center, Jodhpur</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Arunachal Pradesh Regional Centre, Itanagar</a></li>
@@ -194,9 +198,18 @@
            <li class="nav-item"><a class="nav-link" href="#">Sikkim Himalya Regional Center, Gangtok</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Southren Regional Centre, Coimbatore</a></li>
              <li class="nav-item"><a class="nav-link" href="#">Western Regional Centre, Pune</a></li>
-             <li class="nav-item"><a class="nav-link" href="#">Acharya Jagadish Chandra Bose Indian Botanic Garden, Howrah</a></li>
+          </ul>
+          </li>
+      
+             
+             <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">BSI Garden</a>
+          <ul class="sub-menu">
+             <li class="nav-item"><a class="nav-link" href="rGarden.html">Acharya Jagadish Chandra Bose Indian Botanic Garden, Howrah</a></li>
              <li class="nav-item"><a class="nav-link" href="#">Botanic Garden of Indian Republic, Noida</a></li>
              <li class="nav-item"><a class="nav-link" href="#">High Altitude Western Himalayan Regional, Solan</a></li>
+          </ul>
+          </li>
       </ul>
     </li>
 
@@ -458,7 +471,7 @@
       <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="assets/images/Convallaria-majalis-Aha.jpg" alt="" class="img-a img-fluid" style=" height:300px">
+              <img src="assets/images/Asteraceae_-_Aster_amellus.JPG" alt="" class="img-a img-fluid" style=" height:300px">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
@@ -624,6 +637,7 @@
 
 <section class=" bottom-resource bottom-img">
     <div class="col-lg-12 bottom-resource-img"> 
+    <h1 class="bsiCorner">BSI Corner</h1>
     	<div class="bottom-resource-details">
     			<div class="main">
     				<ul class="ch-grid">
@@ -675,8 +689,20 @@
 <div class="col-lg-12 media-gallary ">
 	<div class="row">
     	<div class="col-lg-6 col-md-12">
-            <div class="wrapper foo">
-				<ul id="sb-slider" class="sb-slider">
+
+<div class="wrapper foo">
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Gallery</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Videos</a>
+  </li>
+ </ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  
+  		<ul id="sb-slider" class="sb-slider">
 					<li>
 						<a href="#" target="_blank"><img src="assets/images/slider/1.JPG" alt="image1"/></a>
 						<div class="sb-description">
@@ -725,15 +751,53 @@
 					<a href="#">Next</a>
 					<a href="#">Previous</a>
 				</div>
-		   	</div>
+  
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> 
+  	 <div class="row wrapper">
+  		           <div class="videos" style="margin-top:1em;">
+                    <a href="videos/demo.mp4" class="html5lightbox video" data-group="mygroup"   data-width="600" data-height="400" title="Demo video for BSI">
+                        <span></span>
+                    <img src="videos/demo.png"  width="140" height="90" alt="Demo video for BSI">
+                           </a>
+                    </div>
+                  <div class="col-lg-7" style="margin-top:1em;">Demo video for BSI</div>
+                  
+                   
+   		          <div class="videos" style="margin-top:1em;">
+                    <a href="videos/Robin - 21723.mp4" class="html5lightbox video" data-group="mygroup"   data-width="600" data-height="400" title="Demo video for BSI">
+                        <span></span>
+                    <img src="videos/Robin - 21723.png"  width="140" height="90" alt="Demo video for BSI">
+                           </a>
+                    </div>
+                  <div class="col-lg-7" style="margin-top:1em;">Robin Bird Forest Nature Spring</div>
+
+   		          <div class="videos" style="margin-top:1em;">
+                    <a href="videos/Mountains - 7418.mp4" class="html5lightbox video" data-group="mygroup"   data-width="600" data-height="400" title="Demo video for BSI">
+                        <span></span>
+                    <img src="videos/Mountains - 7418.png"  width="140" height="90" alt="Demo video for BSI">
+                           </a>
+                    </div>
+                  <div class="col-lg-7" style="margin-top:1em;">Mountains Beautiful Landscape Winter Sunset Season</div>
+
+ 
+ 
+              </div>
+                <h3 style=" font-size:16px; text-align:right;"><a href="#"><u>All Videos</u></a></h3>          
+     </div>
+  </div>
+</div>
+
        </div>
             <div class="col-lg-6 col-md-12">
-       <div class="card col-lg-12 foo" style="margin-top:3.6em; padding:10px; background-image: url(assets/images/wn.png); height:350px;" >
+       <div class="card col-lg-12 foo" style="margin-top:5em; padding:10px; background-image: url(assets/images/wn.png); height:365px;" >
                   <div class="card-body ">
                     <h5 class="card-title">What's New</h5>
                     <p class="card-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true" style="color:#F00; font-size:18px;"></i>
                     <a href="#" > Some quick example text to build on the card title and make up the bulk of the card's content.</a></p>
                      <p class="card-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true" style="color:#F00; font-size:18px;"></i>                      <a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                     </p>
+                      <p class="card-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true" style="color:#F00; font-size:18px;"></i>                      <a href="#">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
                      </p>
                         <a href="#" class="card-link"><i class="fa fa-arrow-right" aria-hidden="true"></i> View all</a>
                   </div>
@@ -850,7 +914,7 @@ Salt lake City,Kolkata - 700 064
                 <div class="col-sm-12 col-md-2 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">Impor. Links</h3>
+              <h3 class="w-title-a text-brand">Important Links</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
@@ -1140,5 +1204,6 @@ $('#_reset').on('click', function() {
     }
 });
 </script>
+<script src="js/html5lightbox.js"></script>
 </body>
 </html>
