@@ -4157,7 +4157,7 @@ svg {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
 }
-.view{margin-top:-35%; margin-left:11%; color:#FFF; font-size:1.5em; font-weight:bold;}
+.view{margin-top:-4.5em; margin-left:1.4em; color:#FFF; font-size:1.5em; font-weight:bold;}
 .view a{ color:#FFF; visibility: hidden;}
 .container2 .card:hover a{ visibility:visible; color:#FFF;}
 
